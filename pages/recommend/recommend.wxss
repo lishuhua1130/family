@@ -1,0 +1,111 @@
+.top{
+  display: flex;
+}
+.topLeft{
+  padding-left: 10px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.topRight{
+  flex-grow: 1;
+  position: relative;
+}
+.timeText{
+  color: #737373;
+  font-size: 16px;
+  font-family: '微软雅黑';
+}
+.recommendTetx{
+  font-size: 24px;
+  letter-spacing:2px;
+  padding-top: 3px;
+  font-weight: bold;
+  font-family: '微软雅黑';
+}
+.userinfo-avatar {
+  width: 100rpx;
+  height: 100rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+  background-size: cover;
+  background-color: white;
+}
+
+.userinfo-avatar:after {
+  border: none;
+}
+.substituteImg{
+  position: absolute;
+  left:0px;
+  top:0px;
+}
+.coverImg{
+  margin-left: -15px;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  background-size: cover;
+  background-color: white;
+}
+.singleVideo{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.videoPoster{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+}
+.videoPoster>image{
+  width: 95%;
+  margin-top: 15px;
+  border-radius: 5px;
+}
+.videoName{
+  position: absolute;
+  width: 95%;
+  bottom: 0px;
+  color: #fff;
+  background-color: rgba(24, 23, 23, 0.5);
+  /* 左上角  右上角  右下角  左下角   （顺时针） */
+  border-radius:0px  0px  8px  8px;
+  display: flex;
+  justify-content: center;
+}
+.videoName>text{
+  width: 90%;
+  font-family: '微软雅黑';
+  font-size: 22px;
+}
+.refreshBtn{
+  width: 50px;
+  position: fixed;
+  right: 15px;
+  bottom: 100px;
+}
+
+.jia{
+  width: 88%;
+  margin: 0 auto;
+  margin-top: 20rpx;
+}
+.jiaTitle{
+font-size: 32rpx;
+font-weight: 700;
+}
+.jiaContent{
+  font-size: 26rpx;
+  margin: 10rpx 0;
+  text-indent: 2rem;
+}
+
+.divLine{
+ background: #E0E3DA;
+ width: 100%;
+ height: 5rpx;
+}

@@ -1,0 +1,71 @@
+<view>
+  <view  style='background:#000'>
+    <video id="myVideo" src="{{src}}" height="{{height}}" autoplay="{{autoplay}}" controls="{{true}}" play-btn-position="{{playbtnposition}}" bindpause='videoPause' bindplay='videoPlay' bindended='videoEnd' bindfullscreenchange="onFullScreenChange" class='video'>
+      <cover-view class='videoCover' wx:if='{{!isPlaying}}'>
+        <cover-view class='btnView' bindtap='playCurVideo' wx:if='{{!isPlayEnd}}'>
+          <cover-image src='../../images/playBtn.png' class='btnImg'></cover-image>
+          <cover-view class='btnText'>播放</cover-view>
+        </cover-view>
+        <cover-view class='btnView' bindtap='playCurVideo' wx:if='{{isPlayEnd}}'>
+          <cover-image src='../../images/replay.png' class='btnImg'></cover-image>
+          <cover-view class='btnText'>重播</cover-view>
+        </cover-view>
+        <cover-view class='btnView'>
+          <cover-image src='../../images/weixin.png' class='btnImg'></cover-image>
+          <cover-view class='btnText'>分享</cover-view>
+          <button class='shareBtn' open-type="share"></button>
+        </cover-view>
+      </cover-view>
+    </video>
+    <view class='shareView'>
+      <button open-type="share" class='sendToCommon sendToFriend'>
+        <image src='../../images/transmitArrow.png' animation='{{arrowAni}}'></image>发送给好友</button>
+      <button open-type="share" class='sendToCommon sendToCrowd'>
+        <image src='../../images/transmitArrow.png' animation='{{arrowAni}}'></image>分享到群</button>
+    </view>
+  </view>
+  <scroll-view class="videoList" style='height:{{scrollHeight}}px' scroll-y bindtap='testScroll' id='testScroll'>
+    <view class='videoTop'>
+      <view class='videoTopInfo'>
+        <text class='videoTopTitle'>{{videoTitle}}</text>
+        <!-- <text class='videoCreateTime'>{{videoCreateTime}}</text> -->
+      </view>
+      <view class='goback' bindtap='returnIndex'>返回首页</view>
+    </view>
+    <view class='recommendTitle'>
+      <image src='../../images/titleIcon.png' class='titleIconStyle'></image>猜你喜欢
+      <image src='../../images/titleIcon.png' class='titleIconStyle'></image>
+    </view>
+    <view class='guideView' bindtap='openGuide'>
+      <text>影片 天天看！一触即达</text>
+      <image src='../../images/hands.png'></image>
+    </view>
+    <block wx:for="{{relateListData}}" wx:key="video.tKey" wx:for-item="video" wx:for-index="videoIndex">
+      <view class='singleVideo' bindtap='playVideo' data-tkey="{{video.tKey}}" data-cloumnid="{{video.cloumnId}}">
+        <view class='imgContainer'>
+          <image src="{{video.thumbnail}}" class='videoImg' mode='widthFix'></image>
+        </view>
+        <view class='videoInfo'>
+          <text class='videoTitle'>{{video.title}}</text>
+        </view>
+      </view>
+    </block>
+    <view class='guideView' bindtap='openGuide'>
+      <text>影片 天天看！一触即达</text>
+      <image src='../../images/hands.png'></image>
+    </view>
+    <view class='bottomBtn'>
+      <button class='sendToCommon indexBtn' bindtap='returnIndex'>
+        <image src='../../images/whiteNewest.png'></image>
+        <text>回到首页</text>
+      </button>
+      <button class='sendToCommon recommendBtn' bindtap='returnRecommend'>
+        <image src='../../images/whiterecommend.png'></image>
+        <text>前往推荐</text>
+      </button>
+    </view>
+  </scroll-view>
+</view>
+<view wx:if='{{isShowGuide}}' class='guideImg' bindtap='clickGuide'>
+  <image src='../../images/guide.png' mode='widthfix'></image>
+</view>

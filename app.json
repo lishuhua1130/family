@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/info/info",
+    "pages/newest/newest",
+    "pages/recommend/recommend",
+    "pages/single/single"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "家园影片",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh":true,
+    "onReachBottomDistance":30
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/newest/newest",
+        "text": "最新",
+        "iconPath": "./images/newest.png",
+        "selectedIconPath": "./images/newestSelected.png",
+        "color": "#737373",
+        "selectedColor": "#338dce"
+      },
+      {
+        "pagePath": "pages/recommend/recommend",
+        "text": "推荐",
+        "iconPath": "./images/recommend.png",
+        "selectedIconPath": "./images/recommendSelected.png",
+        "color": "#737373",
+        "selectedColor": "#338dce"
+      }
+    ]
+  },
+  "plugins": {
+    "tencentvideo": {
+      "version": "1.1.1",
+      "provider": "wxa75efa648b60994b"
+    }
+  }
+}

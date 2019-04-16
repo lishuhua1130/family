@@ -1,0 +1,47 @@
+<block wx:if="{{version==1}}">
+  <view class='jia'>
+    <p class="jiaTitle" style='color:red'>生活小常识大比拼活动开始啦</p>
+    <image mode='aspectFill' class='jiaContent' src='../../images/xcx_shxcs.jpg'></image>
+    <view class='jiaContent' style='color:red'>生活小常识大比拼活动开始啦！请各位居家大神们将你们的生活小常识通过小编微信号发给小编吧！届时小编将会筛选出50名比较出乎意料的技巧，分享给各位居家大神们，帮助各位发现更多生活的趣味！
+    </view>
+  </view>
+  <view class='divLine'></view>
+  <view class='jia'>
+    <p class="jiaTitle">鞋子除臭的方法，你真的会吗？</p>
+    <image mode='aspectFill' class='jiaContent' src='../../images/xcx_cxz.jpg'></image>
+    <view class='jiaContent'>在我们生活中鞋子是我们每天都要穿的物品，但是也有让和我们烦恼的地方，那就是鞋子容易臭，我们可以去买一些酒精，把酒精喝水倒进一个容器里，以紙巾沾取，然後用口轻吹紙巾，將酒精吹在鞋垫上。这样就可以防止我们的鞋子臭。
+    </view>
+  </view>
+  <view class='divLine'></view>
+  <view class='jia'>
+    <p class="jiaTitle">毛衣缩小的办法</p>
+    <image mode='aspectFill' class='jiaContent' src='../../images/xcx_maoyi.jpg'></image>
+    <view class='jiaContent'>在我们看来毛衣穿的久了，就会变得宽大起来，这样我们再穿的时候就会显得非常的肥大，穿上去很不合身，这也是我们很头疼的问题，这个时候我们可以把它放到80°C左右的水里浸泡，如果毛衣的某个部位变形了我们就可以把它放到50°C左右的水里浸泡，一个小时左右，然后再捞出晾晒，这样我们就会发现它的伸缩性就会变回来。　</view>
+  </view>
+  <view class='divLine'></view>
+  <view class='jia'>
+    <p class="jiaTitle">洗袜子的技巧</p>
+    <image mode='aspectFill' class='jiaContent' src='../../images/xcx_xiwazi.jpg'></image>
+    <view class='jiaContent'>袜子在我们生活中也是很普通的东西，我们每天洗的袜子方法正确吗？普通的棉线袜子，我们就可以放到清水里浸泡一个小时左右，然后我们再用肥皂进行清洗，这样污垢会很快脱落。如果是纯丝袜、人造丝袜、尼龙袜等，我们就不能放到凉水里清洗，要把它们放到40°C水里浸泡，然后慢慢的搓揉，不要用力，袜子洗后要阴干，不可曝晒和火烤。羊毛袜子更是麻烦，把一小点肥皂和袜子 一起放进水里浸泡，这样对袜子的污垢清理起来很是方便，清理完成后略微捏干，平摊在桌面上用手抹平，阴晾在通风处，或用白布遮盖在阳光下晒干。　</view>
+  </view>
+  <view class='divLine'></view>
+  <view class='jia'>
+    <p class="jiaTitle">丝袜刮破的困扰</p>
+    <image mode='aspectFill' class='jiaContent' src='../../images/xcx_siwaguapo.jpg'></image>
+    <view class='jiaContent'>女孩子的丝袜比较容易被锐物刮破，买回来后放在冰箱冷藏里冻上一会儿，再穿的话就不是很容易破了</view>
+  </view>
+  <view class='divLine'></view>
+  <view class='jia'>
+    <p class="jiaTitle">化妆小技巧</p>
+    <image mode='aspectFill' class='jiaContent' src='../../images/xcx_huazhuang.jpg'></image>
+    <view class='jiaContent'>化妆时，先把微湿的化妆绵放到冰箱里，几分钟后把冰凉的海绵拍在抹好粉底的肌肤上，你会觉得肌肤格外清爽，彩妆也显得特别清新。</view>
+  </view>
+  <view class='divLine'></view>
+  <view class='jia'>
+    <p class="jiaTitle">生日蜡烛</p>
+    <image mode='aspectFill' class='jiaContent' src='../../images/xcx_shengrilazhu.jpg'></image>
+    <view class='jiaContent'>生日蜡烛先放到冰箱冷冻室里冷冻24小时，再插到蛋糕上点燃后，就没烛油流下弄脏蛋糕。</view>
+  </view>
+</block>
+<block wx:else>
+</block>

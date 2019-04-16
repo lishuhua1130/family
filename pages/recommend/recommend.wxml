@@ -1,0 +1,23 @@
+<view class='top'>
+  <view class='topLeft'>
+    <text class='timeText'>{{curTime}}</text>
+    <text class='recommendTetx'>为你推荐</text>
+  </view>
+  <view class='topRight'>
+    <button open-type="getUserInfo" bindgetuserinfo="onGetUserInfo" class="userinfo-avatar" style="background-image: url({{avatarUrl}})">
+      <cover-image class="coverImg" src="{{avatarUrl}}" v-if='{{logged}}' />
+    </button>
+  </view>
+</view>
+<block wx:for="{{curListData}}" wx:key="video.tKey" wx:for-item="video" wx:for-index="videoIndex">
+  <view class="singleVideo">
+    <view class='videoPoster' bindtap='gotoVideoShow' data-tKey="{{video.tKey}}" data-cloumnid="{{video.cloumnId}}">
+      <image src='{{video.thumbnail}}' class='videoImg' mode='widthFix'>
+      </image>
+      <view class="videoName">
+        <text>{{video.title}}</text>
+      </view>
+    </view>
+  </view>
+</block>
+<image src='../../images/refresh.png' class='refreshBtn' bindtap='refreshAllListData' mode='widthFix'></image>

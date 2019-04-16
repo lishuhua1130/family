@@ -1,0 +1,16 @@
+  <view style='margin-top:36px;'>
+    <ul class="topTabs">
+      <li wx:for="{{newestTopTabs}}" wx:for-item="tab" wx:for-index="index" wx:key="tab.id" bindtap="selectTopTab" data-index="{{tab.id}}" class="{{curTabId==tab.id?'tabSelected':'normalTab'}}">{{tab.cloumnName}}</li>
+    </ul>
+      <view wx:for="{{videoList}}" wx:key="videoList.tKey" wx:for-item="video" wx:for-index="videoIndex">
+        <view class="singleVideo">
+          <view class='videoPoster' bindtap='gotoVideoShow' data-tKey="{{video.tKey}}" data-cloumnid="{{video.cloumnId}}">
+            <image src='{{video.thumbnail}}' class='videoImg' mode='widthFix'>
+            </image>
+            <view class="videoName">
+              <text>{{video.title}}</text>
+            </view>
+          </view>
+        </view>
+    </view>
+  </view>
