@@ -4,7 +4,9 @@ page {
   flex-direction: column;
   justify-content: flex-start;
 }
-
+.test{
+width:200px
+}
 .list {
   margin-top: 40rpx;
   height: auto;
